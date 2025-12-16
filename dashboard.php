@@ -5,9 +5,9 @@ session_start();
 
 // --- CONFIGURATION ---
 // IMPORTANT: For security, consider moving these credentials to a separate, non-public file.
-$traccar_host = 'http://10.10.0.3:8082'; // Using IP address
-$traccar_user = 'it@avegabros.com';
-$traccar_pass = 'it@v3ga_gWafu';
+$traccar_host = 'http://localhost:8082'; // Using IP address
+$traccar_user = 'user';
+$traccar_pass = 'password';
 
 /**
  * Fetches data from the Traccar API using cURL.
