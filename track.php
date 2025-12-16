@@ -19,8 +19,8 @@ $from = date('c', strtotime($_GET['from'])); // ISO 8601 with timezone
 $to = date('c', strtotime($_GET['to']));     // ISO 8601 with timezone
 
 $traccarUrl = "http://10.10.0.3:8082/api/reports/route?deviceId=$deviceId&from=" . urlencode($from) . "&to=" . urlencode($to);
-$traccarUsername = 'it@avegabros.com';
-$traccarPassword = 'it@v3ga_gWafu';
+$traccarUsername = 'user@email.com';
+$traccarPassword = 'password';
 
 $ch = curl_init($traccarUrl);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -42,3 +42,4 @@ if ($error || $httpCode !== 200) {
 // Output as JSON
 header('Content-Type: application/json');
 echo $response;
+
