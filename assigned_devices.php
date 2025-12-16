@@ -48,8 +48,8 @@ if (!$userResult) {
 $users = $userResult->fetch_all(MYSQLI_ASSOC);
 
 // Fetch Traccar devices
-$traccarUsername = 'it@avegabros.com';
-$traccarPassword = 'it@v3ga_gWafu';
+$traccarUsername = 'user@email.com';
+$traccarPassword = 'password';
 
 $ch = curl_init("http://127.0.0.1:8082/api/devices");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -128,3 +128,4 @@ while ($row = $result->fetch_assoc()) {
     <?php endforeach; ?>
 </body>
 </html>
+
