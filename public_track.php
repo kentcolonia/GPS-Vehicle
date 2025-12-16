@@ -5,8 +5,8 @@ header('Content-Type: application/json');
 // --- CONFIGURATION ---
 // These details are needed to fetch data from your Traccar server's API
 $traccar_host = 'http://10.10.0.3:8082';
-$traccar_user = 'it@avegabros.com';
-$traccar_pass = 'it@v3ga_gWafu';
+$traccar_user = 'user@email.com';
+$traccar_pass = 'password';
 
 // --- Database Connection ---
 $conn = new mysqli("localhost", "gpsuser", "gpspassword", "gps_tracker");
@@ -88,3 +88,4 @@ $data_to_return = [
 echo json_encode($data_to_return);
 
 ?>
+
