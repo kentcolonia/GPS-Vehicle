@@ -43,10 +43,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 // --- DATA FETCHING ---
-$traccarUsername = 'it@avegabros.com';
-$traccarPassword = 'it@v3ga_gWafu';
+$traccarUsername = 'user@email.com';
+$traccarPassword = 'password';
 
-$ch = curl_init("http://10.10.0.3:8082/api/devices");
+$ch = curl_init("http://localhost:8082/api/devices");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_USERPWD, "$traccarUsername:$traccarPassword");
 $response = curl_exec($ch);
@@ -141,3 +141,4 @@ $conn->close();
     </div>
 </body>
 </html>
+
